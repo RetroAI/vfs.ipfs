@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="vfs.ipfs"
+  version="1.0.0"
+  name="IPFS support"
+  provider-name="squishyhuman">
+  <requires>
+    <import addon="kodi.vfs" version="1.0.0"/>
+  </requires>
+  <extension
+    point="kodi.vfs"
+    protocols="ipfs"
+    extensions=""
+    files="true"
+    directories="true"
+    filedirectories="true"
+    library_@PLATFORM@="@LIBRARY_FILENAME@" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">IPFS support</summary>
+    <description lang="en">Provides support for IPFS.</description>
+    <platform>@PLATFORM@</platform>
+  </extension>
+</addon>
